@@ -12,3 +12,14 @@ Person person = new Person { FirstName = "Sam", LastName = "Musk"};
 Console.WriteLine(person);
 // person.FirstName = "xyz"; // error
 Console.WriteLine(person.FirstName);
+
+// accessing static members
+MyClass.Age = 22;
+Console.WriteLine("\n"+MyClass.greetings);
+MyClass.DisplayAge();
+
+// accessing non-static members
+MyClass obj1 = new MyClass();
+obj1.Name = "Tom";
+Console.WriteLine(obj1.message);
+obj1.DisplayName();
